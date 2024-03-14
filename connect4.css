@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+h1 {
+  color: rgb(85, 85, 85);
+  font-size: 2.5rem;
+}
+
+header {
+  display: grid;
+  place-content: center;
+  height: 5rem;
+  width: 100%;
+  background: rgb(117, 116, 116);
+  position: absolute;
+}
+
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  flex-direction: column;
+}
+
+input[type=submit] {
+  background-color: #6cb4dd;
+  border: none;
+  border-radius: .5rem;
+  padding: .5rem 1rem;
+  color: white;
+  font-size: 1.1rem;
+}
+
+input[type=submit]:hover{
+  cursor: pointer;
+  background-color: #5699c0;
+}
+
+input[type=text] {
+  border: none;
+  border-radius: .2rem;
+  padding: .5rem 1rem;
+  font-size: 1.1rem;
+}
+
+input[type=text]:focus{
+  outline: 2px solid #5699c0;
+}
+
+.double-gradient {
+  background: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(251, 251, 251, 0.1) 100%), linear-gradient(90deg, #84d2ff, #8d5acd);
+}
+
+.container {
+  height: 100lvh;
+}
+/* game board table */
+
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 1px #666;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: gold;
+}
